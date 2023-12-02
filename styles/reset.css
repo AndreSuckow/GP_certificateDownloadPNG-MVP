@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'vivoTypeRegular';
+    src: url(../fonts/woff/VivoType-Regular.woff) format('woff'),
+    url(../fonts/woff2/VivoType-Regular.woff2) format('woff2'),
+    url(../fonts/otf/VivoType-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'vivoTypeLight';
+    src: url(../fonts/woff/VivoType-Light.woff) format('woff'),
+    url(../fonts/woff2/VivoType-Light.woff2) format('woff2'),
+    url(../fonts/otf/VivoType-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'vivoTypeBold';
+    src: url(../fonts/woff/VivoType-Bold.woff) format('woff'),
+    url(../fonts/woff2/VivoType-Bold.woff2) format('woff2'),
+    url(../fonts/otf/VivoType-Bold.otf) format('opentype');
+}
+
+:root {
+
+    /* principais tamanhos de fonte */
+    --title-size: clamp(1.5rem, 5vw, 3rem);
+    --paragraph-size: clamp(1rem, 4vw, 1.8rem);
+    --paragraph-error-size: clamp(0.8rem, 3.6vw, 1.5rem);
+    
+    /* principais fontes */
+    --primary-font-title: 'vivoTypeBold';
+    --primary-font-paragraph: 'vivoTypeRegular';
+    --primary-font-light: 'vivoTypeLight';
+
+    /* cores primárias */ 
+    --primary-color-principal-vivo: #660099; /* rgb(102, 0, 153) */
+    --primary-color-rosa-principal: #EB3C7D; /* rgb(235, 60, 105) *
+
+    /* cores secundárias */
+    --secundary-color-lilas: #BD4AFF;        /* rgb(188, 74, 255) */
+    --secondary-color-roxo-escuro: #380054;  /* rgb(55, 0, 83) */
+    --secondary-color-rose: #FF96B2; /* rgb(255, 151, 178) */
+    --secondary-color-magenta: #CC3D70; /* rgb(203, 60, 113) */
+    
+    /*cores secundárias de apoio */
+    --secondary-color-apoio-menta: #B2D682; /* rgb(178, 214, 229) */
+    --secondary-color-apoio-verdeLimao: #82D400; /* rgb(129, 211, 0) */ 
+    --secondary-color-laranjaClaro: #FFB84C; /* rgb(255, 184, 76) */
+    --secondary-color-laranja: #FF9900;/* rgb(255, 153, 0) */
+}
+
+h1 {
+    font-family: var(--primary-font-title);
+    font-size: var(--title-size);
+    color: var(--secondary-color-apoio-menta);
+}
+
+p {
+    font-family: var(--primary-font-paragraph);
+    font-size: var(--paragraph-size);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- CDN HTML2CANVAS print download -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <title>Certificado</title>
+</head>
+<body>
+    <!-- content visual -->
+    <div class="intro" id="intro">
+        <label>
+            <h1>Insira o nome que aparecerá no seu certificado:</h1>
+        </label>
+        <input type="text" placeholder="insira seu nome" id="inputUser" autocomplete="off">
+        <p class="error">
+            Nome deve ter mínimo de 3 e máximo de 40 letras. </br>
+            Não pode conter símbolos ou números, digite novamente.
+        </p>
+        <div class="btnAndHand">
+            <button id="certificateButton">obter certificado</button>
+            <img class="hand" src="./img/clickHand.png" alt="mão informando para clicar no botão.">
+        </div>
+    </div>
+    <!-- visual content download -->
+    <div class="content" id="contentDownload">
+        <h1 class="title">Parabéns, <span class="userName"></span>!</h1>
+        <p>
+            <span class="userName"></span>, você concluiu de forma bem-sucedida a sua certificação. Seu esforço, dedicação e comprometimento com a aprendizagem merecem reconhecimento, e estamos orgulhosos pelo seu desempenho até aqui.
+        </p>
+        <img class="badge" src="./img/badge.png" alt="medalha vivo">
+    </div>
+
+    <div class="downloadButton">
+        <button id="downloadButton">Download Certificado</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
